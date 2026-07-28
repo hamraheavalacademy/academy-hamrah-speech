@@ -1,0 +1,11 @@
+numpy
+psutil
+torch
+torchaudio
+librosa
+scipy
+soundfile
+pydub
+memray
+jupyterlab
+ipykernel

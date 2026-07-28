@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Profiling outputs
+*.bin
+memray-*.html
+*.prof
+
+# Logs
+*.log
+
+# Model and generated outputs
+outputs/
+checkpoints/
+models/
+*.pt
+*.pth
+*.ckpt
+
+# Temporary files
+*.tmp
+*.temp
