@@ -1,0 +1,110 @@
+{
+  "verification": [
+    {
+      "file": "test1.wav",
+      "backend": "Librosa",
+      "shape": [
+        1,
+        13,
+        740
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "file": "test1.wav",
+      "backend": "SciPy/NumPy",
+      "shape": [
+        1,
+        13,
+        740
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "file": "test1.wav",
+      "backend": "PyTorch CPU",
+      "shape": [
+        1,
+        13,
+        740
+      ],
+      "dtype": "torch.float32"
+    }
+  ],
+  "accuracy": [
+    {
+      "file": "test1.wav",
+      "backend": "Librosa",
+      "compared_frames": 740,
+      "mae": 0.0,
+      "rmse": 0.0,
+      "max_abs_error": 0.0
+    },
+    {
+      "file": "test1.wav",
+      "backend": "SciPy/NumPy",
+      "compared_frames": 740,
+      "mae": 6.467227194661973e-06,
+      "rmse": 9.97663755697431e-06,
+      "max_abs_error": 8.392333984375e-05
+    },
+    {
+      "file": "test1.wav",
+      "backend": "PyTorch CPU",
+      "compared_frames": 740,
+      "mae": 1.5712799722678028e-05,
+      "rmse": 2.1214862499618903e-05,
+      "max_abs_error": 0.0001392364501953125
+    }
+  ],
+  "benchmarks": [
+    {
+      "file": "test1.wav",
+      "backend": "Librosa",
+      "runs": 50,
+      "avg_wall_ms": 4.83130148000555,
+      "std_wall_ms": 1.7749106005675324,
+      "avg_cpu_ms": 38.33302664,
+      "cpu_utilization_percent": 793.4306480074177,
+      "rtf": 0.0006503694921786841,
+      "shape": [
+        1,
+        13,
+        740
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "file": "test1.wav",
+      "backend": "SciPy/NumPy",
+      "runs": 50,
+      "avg_wall_ms": 3.2071350000023813,
+      "std_wall_ms": 0.7148351723866461,
+      "avg_cpu_ms": 25.175926659999988,
+      "cpu_utilization_percent": 784.9974092135595,
+      "rtf": 0.0004317310293990672,
+      "shape": [
+        1,
+        13,
+        740
+      ],
+      "dtype": "torch.float32"
+    },
+    {
+      "file": "test1.wav",
+      "backend": "PyTorch CPU",
+      "runs": 50,
+      "avg_wall_ms": 2.219026559989743,
+      "std_wall_ms": 1.578657795390393,
+      "avg_cpu_ms": 14.523081859999998,
+      "cpu_utilization_percent": 654.4798571526394,
+      "rtf": 0.0002987160256763533,
+      "shape": [
+        1,
+        13,
+        740
+      ],
+      "dtype": "torch.float32"
+    }
+  ]
+}
